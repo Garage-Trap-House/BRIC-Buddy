@@ -18,7 +18,6 @@ def deez():
 def yaa_u(): 
     return "yaa"
 
-
 #Abdul's HTTP request
 @app.route("/abdul")
 def abdul():
