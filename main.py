@@ -18,5 +18,10 @@ def deez():
 def abdul():
     return "Yo its ya boi Abdul"
 
+#Lan's HTTP request
+@app.route("/lan")
+def lan():
+    return "Hello! This is Lan :DDDD"
+
 # the host value allows traffic from anywhere to run this 
 app.run(host = "0.0.0.0")
