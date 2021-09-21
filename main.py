@@ -8,7 +8,9 @@ app = Flask(__name__)
 def hello_world(): 
     return "The Garage Trap House says hi! :)"
 
-
+@app.route("/deez")
+def deez(): 
+    return "Deez nuts. Hah gotem!"
 
 # the host value allows traffic from anywhere to run this 
 app.run(host = "0.0.0.0")
