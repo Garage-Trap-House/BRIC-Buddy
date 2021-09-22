@@ -1,4 +1,5 @@
 from flask import Flask 
+import libraryTesting
 
 from lan_libraryexample import *
 
@@ -34,6 +35,10 @@ def lan():
 @app.route("/pandas")
 def pandas(): 
     return example()
+@app.route("/requestTest")
+def reqTest():
+    return libraryTesting.requestsAttempt() 
+
 
 # the host value allows traffic from anywhere to run this 
 app.run(host = "0.0.0.0")
