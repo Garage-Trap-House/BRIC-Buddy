@@ -1,5 +1,7 @@
 from flask import Flask 
 
+from lan_libraryexample import *
+
 # make the flask app 
 app = Flask(__name__)
 
@@ -28,5 +30,12 @@ def abdul():
 def lan():
     return "Hello! This is Lan :DDDD"
 
+#Lan's library example
+@app.route("/pandas")
+def pandas(): 
+    return example()
+
 # the host value allows traffic from anywhere to run this 
 app.run(host = "0.0.0.0")
+
+
