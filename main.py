@@ -3,6 +3,8 @@ import libraryTesting
 
 from lan_libraryexample import *
 
+import numpyTest
+
 # make the flask app 
 app = Flask(__name__)
 
@@ -38,6 +40,10 @@ def pandas():
 @app.route("/requestTest")
 def reqTest():
     return libraryTesting.requestsAttempt() 
+
+@app.route("/numpy")
+def numpy():
+    return numpyTest.numpyAttempt() 
 
 
 # the host value allows traffic from anywhere to run this 
