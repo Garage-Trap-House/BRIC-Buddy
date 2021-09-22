@@ -13,6 +13,11 @@ def hello_world():
 def deez(): 
     return "Deez nuts. Hah gotem!"
 
+#Talha's HTTP request
+@app.route("/yaa_u")
+def yaa_u(): 
+    return "yaa"
+
 #Abdul's HTTP request
 @app.route("/abdul")
 def abdul():
