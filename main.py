@@ -1,6 +1,6 @@
 from flask import Flask 
 import libraryTesting
-
+from arrowTest import *
 from lan_libraryexample import *
 
 import numpyTest
@@ -44,6 +44,11 @@ def reqTest():
 @app.route("/numpy")
 def numpy():
     return numpyTest.numpyAttempt() 
+
+#Abdul's library example
+@app.route("/time")
+def time():
+    return currentTime()
 
 
 # the host value allows traffic from anywhere to run this 
