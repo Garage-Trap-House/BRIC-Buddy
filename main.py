@@ -2,6 +2,7 @@ from flask import Flask
 import libraryTesting
 from arrowTest import *
 from lan_libraryexample import *
+from Weather import *
 
 import numpyTest
 
@@ -49,6 +50,11 @@ def numpy():
 @app.route("/time")
 def time():
     return currentTime()
+
+#Talha's library example
+@app.route("/weather")
+def weather():
+    return currentWeather()
 
 
 # the host value allows traffic from anywhere to run this 
