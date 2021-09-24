@@ -1,10 +1,7 @@
-
-
-
 import math as math 
 
 
-def example():
+def mathAttempt():
 
     num = math.pi
 

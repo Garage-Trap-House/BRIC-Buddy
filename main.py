@@ -1,7 +1,7 @@
 from flask import Flask 
 import libraryTesting
 from arrowTest import *
-from lan_libraryexample import *
+import mathTest
 from Weather import *
 
 import numpyTest
@@ -35,9 +35,10 @@ def lan():
     return "Hello! This is Lan :DDDD"
 
 #Lan's library example
-@app.route("/pandas")
-def pandas(): 
-    return example()
+@app.route("/math")
+def math(): 
+    return mathTest.mathAttempt()
+
 @app.route("/requestTest")
 def reqTest():
     return libraryTesting.requestsAttempt() 
