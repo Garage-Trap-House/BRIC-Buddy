@@ -36,8 +36,10 @@ def lan():
 
 #Lan's library example
 @app.route("/math")
-def math(): 
-    return mathTest.mathAttempt()
+def math():
+    n = 2
+    m = 5 
+    return mathTest.mathAttempt(n,m)
 
 @app.route("/requestTest")
 def reqTest():

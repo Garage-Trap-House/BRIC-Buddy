@@ -1,13 +1,15 @@
 import math as math 
 
 
-def mathAttempt():
+def mathAttempt(n, k):
 
     num = math.pi
 
+    combination = math.comb(n, k)
+
     num_string = str(num)
 
-    return num_string
+    return str(combination)
 
 
 
