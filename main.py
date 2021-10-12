@@ -1,5 +1,10 @@
 from flask import Flask 
 import libraryTesting
+from arrowTest import *
+import mathTest
+from Weather import *
+
+import numpyTest
 
 # make the flask app 
 app = Flask(__name__)
@@ -29,10 +34,31 @@ def abdul():
 def lan():
     return "Hello! This is Lan :DDDD"
 
+#Lan's library example
+@app.route("/math")
+def math(): 
+    return mathTest.mathAttempt()
+
 @app.route("/requestTest")
 def reqTest():
     return libraryTesting.requestsAttempt() 
 
+@app.route("/numpy")
+def numpy():
+    return numpyTest.numpyAttempt() 
+
+#Abdul's library example
+@app.route("/time")
+def time():
+    return currentTime()
+
+#Talha's library example
+@app.route("/weather")
+def weather():
+    return currentWeather()
+
 
 # the host value allows traffic from anywhere to run this 
 app.run(host = "0.0.0.0")
+
+
