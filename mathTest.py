@@ -11,8 +11,6 @@ def mathAttempt(n, k):
 
     return str(combination)
 
-
-
-
-
-
+def abdulAttempt(x, y):
+    result = math.copysign(x,y)
+    return str(result)
