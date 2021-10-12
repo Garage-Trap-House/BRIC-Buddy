@@ -4,3 +4,5 @@ requests
 arrow
 pyowm
 math
+firebase_admin
+pyrebase
