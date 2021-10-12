@@ -54,6 +54,12 @@ def numpy():
 def time():
     return currentTime()
 
+@app.route("/abdulTest")
+def funcToTest():
+    x = 4
+    y = -8
+    return mathTest.abdulAttempt(x,y)
+
 #Talha's library example
 @app.route("/weather")
 def weather():
