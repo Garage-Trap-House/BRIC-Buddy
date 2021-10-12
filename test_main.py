@@ -4,6 +4,9 @@ import pytest
 import mathTest
 import libraryTesting
 
+# Talha's Test
+def test_Talha():
+    assert mathTest.talhaInput(1,10)== '1.0' 
 # Lan's test
 def test_mathAnswer():
     assert mathTest.mathAttempt(3,5) == 0
