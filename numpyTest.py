@@ -1,5 +1,5 @@
 import numpy as np 
 
-def numpyAttempt():
-    a = np.empty(2)
+def numpyAttempt(n):
+    a = np.empty(n)
     return str(a)

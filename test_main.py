@@ -1,4 +1,5 @@
 from mathTest import *
+from numpyTest import numpyAttempt
 import pytest
 import mathTest
 import libraryTesting
@@ -14,3 +15,7 @@ def test_URLRequest():
 #Abdul's Test
 def test_abdulAttmeptPass():
     assert abdulAttempt(3,-1) == '-3.0'
+
+#Vincent's Test
+def test_numpy():
+    assert numpyAttempt(2) == [0,1]
