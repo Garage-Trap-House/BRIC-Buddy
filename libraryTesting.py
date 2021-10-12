@@ -1,9 +1,9 @@
 import requests
 from requests.exceptions import HTTPError
 
-def requestsAttempt(): 
+def requestsAttempt(URL): 
     
-    response = requests.get('https://api.github.com')
+    response = requests.get(URL)
 
     if response.status_code == 200: 
         return "it worked!"
