@@ -1,5 +1,8 @@
 import math as math 
 
+def talhaInput (a,b):
+    answer = math.modf(a,b)
+    return str(answer)
 
 def mathAttempt(n, k):
 
@@ -14,3 +17,4 @@ def mathAttempt(n, k):
 def abdulAttempt(x, y):
     result = math.copysign(x,y)
     return str(result)
+
